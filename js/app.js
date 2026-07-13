@@ -147,17 +147,37 @@ window.addEventListener('keyup', e => {
   if ((k === 'arrowdown' || k === 's') && keyVector.y > 0) keyVector.y = 0;
 });
 
+// Qué tan rápido se mueve el dragón al usar el joystick táctil, comparado
+// con el teclado. Súbelo si sientes que en el celular se mueve muy poco,
+// bájalo si se siente demasiado rápido/brusco.
+const TOUCH_SPEED_MULTIPLIER = 1.8;
+
 const joystick = document.getElementById('joystick');
+const joystickBase = document.getElementById('joystickBase');
 const knob = document.getElementById('joystickKnob');
+const gameWrap = document.getElementById('gameWrap');
 let joyPointerId = null, joyCenter = {x:0,y:0};
-const JOY_RADIUS = 34;
-joystick.addEventListener('pointerdown', e => {
+const JOY_RADIUS = 46; // qué tan lejos puedes arrastrar el dedo del centro (en px)
+
+// Joystick FLOTANTE: aparece centrado donde primero toques la pantalla
+// (dentro del área del juego), en vez de estar fijo en una esquina.
+gameWrap.addEventListener('pointerdown', e => {
+  if (e.pointerType !== 'touch') return; // el mouse/desktop sigue usando teclado, no interferimos
   joyPointerId = e.pointerId;
-  const rect = joystick.getBoundingClientRect();
-  joyCenter = { x: rect.left + rect.width/2, y: rect.top + rect.height/2 };
-  joystick.setPointerCapture(e.pointerId);
+  const rect = gameWrap.getBoundingClientRect();
+  joyCenter = { x: e.clientX, y: e.clientY };
+  const size = joystick.offsetWidth || 110;
+  // lo posicionamos centrado en el dedo, pero sin que se salga del recuadro del juego
+  let left = e.clientX - rect.left - size/2;
+  let top = e.clientY - rect.top - size/2;
+  left = Math.max(4, Math.min(rect.width - size - 4, left));
+  top = Math.max(4, Math.min(rect.height - size - 4, top));
+  joystick.style.left = left + 'px';
+  joystick.style.top = top + 'px';
+  joystick.style.display = 'flex';
+  gameWrap.setPointerCapture(e.pointerId);
 });
-joystick.addEventListener('pointermove', e => {
+gameWrap.addEventListener('pointermove', e => {
   if (e.pointerId !== joyPointerId) return;
   let dx = e.clientX - joyCenter.x, dy = e.clientY - joyCenter.y;
   const dist = Math.min(Math.hypot(dx,dy), JOY_RADIUS);
@@ -170,9 +190,11 @@ function resetJoystick(e){
   if (e.pointerId !== joyPointerId) return;
   joyPointerId = null; touchVector.x = 0; touchVector.y = 0;
   knob.style.transform = 'translate(0,0)';
+  joystick.style.display = 'none';
 }
-joystick.addEventListener('pointerup', resetJoystick);
-joystick.addEventListener('pointercancel', resetJoystick);
+gameWrap.addEventListener('pointerup', resetJoystick);
+gameWrap.addEventListener('pointercancel', resetJoystick);
+gameWrap.addEventListener('pointerleave', resetJoystick);
 
 function tryInteract(){ if (activeHotspot) openPanel(activeHotspot.panel()); }
 document.getElementById('prompt').addEventListener('click', tryInteract);
@@ -203,13 +225,15 @@ document.getElementById('langBtn').addEventListener('click', () => {
 
 function update(){
   const room = ROOMS[currentRoom];
-  const dx = (touchVector.x !== 0 || touchVector.y !== 0) ? touchVector.x : keyVector.x;
-  const dy = (touchVector.x !== 0 || touchVector.y !== 0) ? touchVector.y : keyVector.y;
+  const usingTouch = touchVector.x !== 0 || touchVector.y !== 0;
+  const dx = usingTouch ? touchVector.x : keyVector.x;
+  const dy = usingTouch ? touchVector.y : keyVector.y;
   if (dx !== 0) player.facing = dx > 0 ? 1 : -1;
   if (dx !== 0 || dy !== 0) {
     const len = Math.hypot(dx, dy) || 1;
-    player.x += (dx/len) * player.speed;
-    player.y += (dy/len) * player.speed * 0.55;
+    const speed = player.speed * (usingTouch ? TOUCH_SPEED_MULTIPLIER : 1);
+    player.x += (dx/len) * speed;
+    player.y += (dy/len) * speed * 0.55;
     player.animT += 0.2;
   }
   player.x = Math.max(40, Math.min(W - 40, player.x));

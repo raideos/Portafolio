@@ -68,7 +68,7 @@ h1{
 #gameWrap{
   position:relative; width:min(92vw, 820px);
   border-radius:22px; overflow:hidden; box-shadow:var(--shadow);
-  background:var(--card);
+  background:var(--card); touch-action:none;
 }
 canvas{ display:block; width:100%; height:auto; aspect-ratio: 960 / 540; }
 
@@ -82,8 +82,8 @@ canvas{ display:block; width:100%; height:auto; aspect-ratio: 960 / 540; }
 }
 
 #joystick{
-  display:none; position:fixed; left:26px; bottom:26px;
-  width:96px; height:96px; z-index:40;
+  display:none; position:absolute; width:110px; height:110px; z-index:40;
+  pointer-events:none; /* el área táctil real la maneja #gameWrap */
 }
 #joystickBase{
   width:100%; height:100%; border-radius:50%;
@@ -91,11 +91,9 @@ canvas{ display:block; width:100%; height:auto; aspect-ratio: 960 / 540; }
   display:flex; align-items:center; justify-content:center;
 }
 #joystickKnob{
-  width:42px; height:42px; border-radius:50%;
+  width:46px; height:46px; border-radius:50%;
   background:var(--coral); opacity:.9; transition:transform .05s linear;
 }
-@media (hover:none) and (pointer:coarse){ #joystick{ display:block; } }
-
 #overlay{
   position:fixed; inset:0; background:rgba(20,18,32,.4);
   display:none; align-items:center; justify-content:center; z-index:50;
