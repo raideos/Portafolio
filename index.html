@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Portafolio Interactivo</title>
+<link rel="icon" type="image/x-icon" href="images/favicon/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app">
+  <h1 id="pageTitle">Conoce un poco más sobre mí</h1>
+  <div id="subtitle">Camina con las flechas / WASD, o usa el menú para saltar directo a una sección</div>
+
+  <div id="loadingMsg">Cargando tu estudio...</div>
+
+  <div id="topBar">
+    <div id="nav"></div>
+    <div id="controls">
+      <button class="icon-btn" id="themeBtn" title="Modo claro/oscuro">🌙</button>
+      <button class="icon-btn" id="langBtn" title="Cambiar idioma">EN</button>
+    </div>
+  </div>
+
+  <div id="gameWrap">
+    <canvas id="game"></canvas>
+    <div id="prompt">Ver</div>
+  </div>
+</div>
+
+<div id="joystick"><div id="joystickBase"><div id="joystickKnob"></div></div></div>
+
+<div id="overlay">
+  <div id="panel">
+    <button class="closeBtn" id="closePanel">✕</button>
+    <div id="panelBody"></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,586 @@
+{
+  "ui": {
+    "es": {
+      "title": "Conoce un poco más sobre mí",
+      "subtitle": "Camina con las flechas / WASD, o usa el menú para saltar directo a una sección",
+      "rooms": [
+        "Sobre mí",
+        "Proyectos de videojuegos",
+        "Otras experiencias",
+        "Contacto"
+      ],
+      "ver": "Ver",
+      "langBtn": "EN",
+      "miHistoria": "Mi historia",
+      "misGustos": "Mis gustos",
+      "videojuegosFavoritos": "Videojuegos favoritos",
+      "musicaTitle": "Mis canciones favoritas",
+      "musicaDisclaimer": "La música es muy importante para mi. \nEstas son algunas de mis canciones favoritas, pero escucho música de todo tipo de género, ritmo e idioma.",
+      "lineaTiempo": "Línea de tiempo de proyectos",
+      "verProyecto": "Ver proyecto →",
+      "reconocimientosTitle": "Reconocimientos y experiencias",
+      "contactoTitle": "Contacto",
+      "abrir": "Abrir →",
+      "cargando": "Cargando..."
+    },
+    "en": {
+      "title": "Get to know a bit more about me",
+      "subtitle": "Walk with arrow keys / WASD, or use the menu to jump straight to a section",
+      "rooms": [
+        "About me",
+        "Game projects",
+        "Other experiences",
+        "Contact"
+      ],
+      "ver": "View",
+      "langBtn": "ES",
+      "miHistoria": "My story",
+      "misGustos": "My interests",
+      "videojuegosFavoritos": "Favorite games",
+      "musicaTitle": "My favorite songs",
+      "musicaDisclaimer": "Music is very important to me. \nThese are some of my favorite songs, but I listen to music of every genre, rhythm, and language.",
+      "lineaTiempo": "Project timeline",
+      "verProyecto": "View project →",
+      "reconocimientosTitle": "Recognitions & experiences",
+      "contactoTitle": "Contact",
+      "abrir": "Open →",
+      "cargando": "Loading..."
+    }
+  },
+  "data": {
+    "sobreMi": {
+      "foto": "images/profile/foto.jpg",
+      "historia": {
+        "nombre": {
+          "es": "Carlos Becerra",
+          "en": "Carlos Becerra"
+        },
+        "bullets": [
+          {
+            "es": "Ingeniero de sistemas de la ciudad de Bogotá, Colombia",
+            "en": "Systems engineer from Bogotá, Colombia"
+          },
+          {
+            "es": "Desarrollador de videojuegos, principalmente en Unity",
+            "en": "Game developer, primarily working in Unity"
+          },
+          {
+            "es": "Emprendedor y siempre creando nuevos proyectos para impactar positivamente a los demás",
+            "en": "Entrepreneur, always creating new projects to positively impact others"
+          }
+        ]
+      },
+      "gustos": [
+        {
+          "name": {
+            "es": "Japón",
+            "en": "Japan"
+          },
+          "description": {
+            "es": "Su cultura, idioma y estética me fascinan",
+            "en": "Its culture, language, and aesthetics fascinate me"
+          },
+          "image": "images/interests/japon.jpg"
+        },
+        {
+          "name": {
+            "es": "Animales",
+            "en": "Animals"
+          },
+          "description": {
+            "es": "Amante de los perros y los animales en general",
+            "en": "A dog lover, and animals in general"
+          },
+          "image": "images/interests/toky.jpg"
+        },
+        {
+          "name": {
+            "es": "Cocina",
+            "en": "Cooking"
+          },
+          "description": {
+            "es": "Disfruto experimentar con nuevas recetas",
+            "en": "I enjoy experimenting with new recipes"
+          },
+          "image": "images/interests/cocina.jpg"
+        },
+        {
+          "name": {
+            "es": "Violín",
+            "en": "Violin"
+          },
+          "description": {
+            "es": "Practico en mis ratos libres",
+            "en": "I practice in my free time"
+          },
+          "image": "images/interests/violin.webp"
+        },
+        {
+          "name": {
+            "es": "Origami",
+            "en": "Origami"
+          },
+          "description": {
+            "es": "Me encanta crear figuras con papel",
+            "en": "I love creating figures with paper"
+          },
+          "image": "images/interests/origami.jpg"
+        },
+        {
+          "name": {
+            "es": "Viajar",
+            "en": "Traveling"
+          },
+          "description": {
+            "es": "Disfruto descubrir nuevos lugares y culturas",
+            "en": "I enjoy discovering new places and cultures"
+          },
+          "image": "images/interests/viajes.jpg"
+        }
+      ],
+      "videojuegosFavoritos": [
+        {
+          "name": {
+            "es": "NieR:Automata",
+            "en": "NieR:Automata"
+          },
+          "image": "images/games/nier-automata.webp"
+        },
+        {
+          "name": {
+            "es": "Clair Obscur: Expedition 33",
+            "en": "Clair Obscur: Expedition 33"
+          },
+          "image": "images/games/clair-obscur-expedition-33.jpg"
+        },
+        {
+          "name": {
+            "es": "Steins;Gate",
+            "en": "Steins;Gate"
+          },
+          "image": "images/games/steins-gate.jpg"
+        },
+        {
+          "name": {
+            "es": "Genshin Impact",
+            "en": "Genshin Impact"
+          },
+          "image": "images/games/genshin-impact.jpg"
+        },
+        {
+          "name": {
+            "es": "Baldur's Gate 3",
+            "en": "Baldur's Gate 3"
+          },
+          "image": "images/games/baldurs-gate-3.jpg"
+        },
+        {
+          "name": {
+            "es": "Pokémon HeartGold/SoulSilver",
+            "en": "Pokémon HeartGold/SoulSilver"
+          },
+          "image": "images/games/pokemon.jpg"
+        }
+      ],
+      "musica": [
+        {
+          "title": {
+            "es": "Mitei — Childspot",
+            "en": "Mitei — Childspot"
+          },
+          "url": "https://open.spotify.com/track/3RjvsrM1aOshXFCdqYVuy1?si=ccf5ff8b3bd64cc2"
+        },
+        {
+          "title": {
+            "es": "YAVA! — BABYMETAL",
+            "en": "YAVA! — BABYMETAL"
+          },
+          "url": "https://open.spotify.com/track/7cA05n0em17eOPO1tGqidT?si=8fe9c99d06414308"
+        },
+        {
+          "title": {
+            "es": "Yasashii Suisei — YOASOBI",
+            "en": "Yasashii Suisei — YOASOBI"
+          },
+          "url": "https://open.spotify.com/track/5MUb136to9lnJLfIy5FZKI?si=8c303033595f4e01"
+        },
+        {
+          "title": {
+            "es": "I'm good — David Guetta & Bebe Rexha",
+            "en": "I'm good — David Guetta & Bebe Rexha"
+          },
+          "url": "https://open.spotify.com/track/4uUG5RXrOk84mYEfFvj3cK?si=b7e6494e7941422b"
+        },
+        {
+          "title": {
+            "es": "Levitating — Dua Lipa",
+            "en": "Levitating — Dua Lipa"
+          },
+          "url": "https://open.spotify.com/track/39LLxExYz6ewLAcYrzQQyP?si=91884afcd98e4883"
+        },
+        {
+          "title": {
+            "es": "Song of the Ancients — NieR:Automata",
+            "en": "Song of the Ancients — NieR:Automata"
+          },
+          "url": "https://open.spotify.com/track/3QgrByRa9IfUgil3DRmmvC?si=ad5967ae3aba4149"
+        }
+      ]
+    },
+    "proyectos": [
+      {
+        "year": 2014,
+        "title": {
+          "es": "El lado oscuro de Bakatá",
+          "en": "El lado oscuro de Bakatá"
+        },
+        "description": {
+          "es": "Bakatá se encuentra invadida por imaginarios que generan problemas de comunicación y violencia entre sus habitantes,  pero los más jóvenes, los niños y niñas, pueden verlos, combatirlos y deberán luchar por reconciliar los territorios, vencer a la estigmatización, la avaricia, la desinformación, los prejuicios, el odio y transformar el lado oscuro de Bakatá.",
+          "en": "Bakatá is invaded by imaginaries that generate communication problems and violence among its inhabitants, but the youngest, the children, can see them, fight them and must fight to reconcile the territories, overcome stigmatization, greed, misinformation, prejudices, hatred and transform the dark side of Bakatá."
+        },
+        "link": "https://solarisgames.wixsite.com/bakata/lado-oscuro",
+        "image": "images/projects/Bakata.jpg",
+        "tags": {
+          "es": [
+            "RPG Maker",
+            "PC",
+            "RPG"
+          ],
+          "en": [
+            "RPG Maker",
+            "PC",
+            "RPG"
+          ]
+        },
+        "imageHover": "images/projects/Bakata-hover.png"
+      },
+      {
+        "year": 2017,
+        "title": {
+          "es": "Exorcist",
+          "en": "Exorcist"
+        },
+        "description": {
+          "es": "Eres un exorcista experimentado que recorre el infierno buscando expulsar, ahuyentar y destruir los espíritus malignos.\nJuega este Puzzle que usa las mecánicas de bloqueo de celulares",
+          "en": "You are a seasoned exorcist traversing Hell, seeking to expel, banish, and destroy evil spirits.\nPlay this puzzle game that uses mobile phone lock mechanics."
+        },
+        "link": "https://www.youtube.com/watch?v=3r41l1CJpt8",
+        "image": "images/projects/Exorcist.jpg",
+        "tags": {
+          "es": [
+            "Unity",
+            "Android",
+            "Móvil",
+            "Puzzle"
+          ],
+          "en": [
+            "Unity",
+            "Android",
+            "Mobile",
+            "Puzzle"
+          ]
+        },
+        "imageHover": "images/projects/Exorcist-hover.png"
+      },
+      {
+        "year": 2018,
+        "title": {
+          "es": "Holy Sheep",
+          "en": "Holy Sheep"
+        },
+        "description": {
+          "es": "En Holy sheep, los jugadores encarnan a perros pastores en un mundo postapocalíptico sin humanos; los perros reúnen ovejas para ofrendar a sus dueños desaparecidos, a cambio de lo cual reciben comida. Sin embargo lo que en realidad sucede es que sin saberlo trabajan para una raza alienígena que raptó a los humanos y ahora a las ovejas para ofrendar a sus dioses. Todo sucede ambientado en la década de los 90s en un mundo donde la naturaleza está reclamando de nuevo los lugares que había transformado el hombre.",
+          "en": "In Holy Sheep, players take on the role of sheepdogs in a post-apocalyptic world devoid of humans. The dogs gather sheep to offer to their missing owners, receiving food in return. However, they are unknowingly working for an alien race that abducted humans and now takes the sheep as offerings to their gods. The game is set in the 1990s, in a world where nature is reclaiming the lands transformed by humankind."
+        },
+        "link": "https://www.youtube.com/watch?v=jhiUeModGYc",
+        "image": "images/projects/HolySheep.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "Fiesta",
+            "Juego de estrategia por turnos"
+          ],
+          "en": [
+            "Unity",
+            "PC",
+            "Couch party",
+            "Turn based strategy game"
+          ]
+        },
+        "imageHover": "images/projects/HolySheep-hover.png"
+      },
+      {
+        "year": 2019,
+        "title": {
+          "es": "The Brightest Ocean",
+          "en": "The Brightest Ocean"
+        },
+        "description": {
+          "es": "Eres Mowa, un camarón mantis que se embarca en la aventura de buscar a su familia perdida luego de que un cataclismo mundial cambió para siempre la faz de la tierra inundándola con el océano, que ahora es un lugar oscuro, inestable, y más peligroso que nunca.",
+          "en": "You are Mowa, a mantis shrimp that takes over the adventure of looking for its lost family. Mowa's family disappeared after a global cataclysm changed the Earth surface with drowning seas. The ocean is now an unstable dark place more dangerous than ever before."
+        },
+        "link": "https://asharastudios.itch.io/un-oceano-brillante",
+        "image": "images/projects/TBO.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "Exploración",
+            "Desplazamiento lateral",
+            "Puzzles"
+          ],
+          "en": [
+            "Unity",
+            "PC",
+            "Exploration",
+            "Side-scrolling",
+            "Puzzle"
+          ]
+        },
+        "imageHover": "images/projects/TBO-hover.png"
+      },
+      {
+        "year": 2020,
+        "title": {
+          "es": "Sinful Catalyst CH1: Ethereal Camellia",
+          "en": "Sinful Catalyst CH1: Ethereal Camellia"
+        },
+        "description": {
+          "es": "Sinful Catalyst es una novela visual de fantasía oscura con un sistema de combate que combina puzles y acción. Sigue el viaje de Gyulia en el Segundo Círculo, enfréntate a mayordomos malvados y sucumbe ante la primera Maestra, Lilith.",
+          "en": "Sinful Catalyst is a dark fantasy visual novel with a puzzle/action battle system. Follow Gyulia's journey on the Second Circle, battle nasty butlers, and fall at the hands of the first Mistress, Lilith."
+        },
+        "link": "https://store.steampowered.com/app/1628260/Sinful_Catalyst_CH1_Ethereal_Camellia/",
+        "image": "images/projects/Sinful.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "Novela visual",
+            "NSFW",
+            "Puzzles"
+          ],
+          "en": [
+            "Unity",
+            "PC",
+            "Visual Novel",
+            "NSFW",
+            "Puzzle"
+          ]
+        },
+        "imageHover": "images/projects/Sinful-hover.png"
+      },
+      {
+        "year": 2021,
+        "title": {
+          "es": "Silicon Hearts: EMBLA",
+          "en": "Silicon Hearts: EMBLA"
+        },
+        "description": {
+          "es": "Has ganado el sorteo de SAI-G para participar en la fase beta de EMBLA: la unidad de IA más avanzada de la famosa compañía tecnológica.\nLa única condición es que entrenes sus módulos cognitivos, que desarrollarán gradualmente la percepción de la humanidad en la unidad EMBLA.\nSé uno de los primeros afortunados en interactuar con este ser supremo.",
+          "en": "You won SAI-G’s raffle for beta testing EMBLA: the most advanced AI unit of the famous technology company.\nThe only condition is that you train its cognitive modules, which will slowly develop the EMBLA unit’s perception of humanity.\nBecome one of the first fortunate to interact with the ultimate being."
+        },
+        "link": "https://embla.kimochi.games",
+        "image": "images/projects/EMBLA.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "Novela visual",
+            "NSFW",
+            "Puzzles"
+          ],
+          "en": [
+            "Unity",
+            "PC",
+            "Visual Novel",
+            "NSFW",
+            "Puzzle"
+          ]
+        },
+        "imageHover": "images/projects/EMBLA-hover.png"
+      },
+      {
+        "year": 2022,
+        "title": {
+          "es": "Zorrito Comunica y el Secreto del Humedal",
+          "en": "Zorrito Comunica y el Secreto del Humedal"
+        },
+        "description": {
+          "es": "Juega, decide y cambia el destino de Zorrito Comunica y el secreto del Humedal",
+          "en": "Play, decide and change the destiny of Zorrito Comunica and the secret of the Wetland"
+        },
+        "link": "https://www.youtube.com/watch?v=jr3gla6l4xg",
+        "image": "images/projects/Zorrito.jpg",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "FMV",
+            "Multiples finales"
+          ],
+          "en": [
+            "Unity",
+            "PC",
+            "FMV",
+            "Multiple endings"
+          ]
+        },
+        "imageHover": "images/projects/Zorrito-hover.png"
+      },
+      {
+        "year": 2023,
+        "title": {
+          "es": "Arcane Bestiary",
+          "en": "Arcane Bestiary"
+        },
+        "description": {
+          "es": "Explora mazmorras junto a tus criaturas llamadas Arkane. Derrota enemigos en estos laberintos autogenerados y acumula la mayor cantidad de puntos.",
+          "en": "Explore dungeons alongside your creatures called Arkane. Defeat enemies in these auto-generated labyrinths and accumulate the most points."
+        },
+        "link": "",
+        "image": "images/projects/ArcaneBestiary.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "PC",
+            "Dungeon Crawler"
+          ],
+          "en": [            
+            "Unity",
+            "PC",
+            "Dungeon Crawler"
+          ]
+        },
+        "imageHover": "images/projects/ArcaneBestiary-hover.png"
+      },
+      {
+        "year": 2023,
+        "title": {
+          "es": "Sombras Ancestrales",
+          "en": "Sombras Ancestrales"
+        },
+        "description": {
+          "es": "Juego de construcción de mazos con combate en tiempo real, en el que juegas como un exorcista que debe sellar criaturas terroríficas. Explora lugares turísticos de Colombia, en mapas creados de manera procedural, mientras creas una baraja de cartas para derrotar a tus enemigos siguiendo patrones en pantalla.",
+          "en": "A deck-building game with real-time combat, where you play as an exorcist tasked with sealing away terrifying creatures. Explore procedurally generated maps of Colombian tourist destinations while crafting a deck of cards to defeat your enemies by following on-screen patterns."
+        },
+        "link": "https://kimochivg.itch.io/sombrasancestrales",
+        "image": "images/projects/SombrasAncestrales.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "Android",
+            "Móvil",
+            "Construcción de mazos"
+          ],
+          "en": [
+            "Unity",
+            "Android",
+            "Mobile",
+            "Deck-building"
+          ]
+        },
+        "imageHover": "images/projects/SombrasAncestrales-hover.png"
+      },
+      {
+        "year": 2025,
+        "title": {
+          "es": "New Festival Town",
+          "en": "New Festival Town"
+        },
+        "description": {
+          "es": "Bienvenido a New Festival Town, un arcade social inspirado en lo retro donde cada jugador puede destacar, competir y conectar. En esta experiencia tipo consola, cuidas personajes únicos llamados Towners. Cada Towner es tu avatar personal, tu acceso a recompensas diarias, personalización y desafíos arcade llenos de acción. Ya sea que te guste coleccionar, decorar o escalar posiciones en los rankings, Festival Town te da las herramientas para jugar a tu manera.",
+          "en": "Welcome to New Festival Town, a social arcade inspired by retro games where every player can stand out, compete, and connect. In this console-style experience, you care for unique characters called Towners. Each Towner is your personal avatar, giving you access to daily rewards, customization, and action-packed arcade challenges. Whether you like collecting, decorating, or climbing the rankings, Festival Town provides the tools for you to play your way."
+        },
+        "link": "https://play.google.com/store/apps/details?id=com.AsharaStudios.NewFestivalTown&hl=es",
+        "image": "images/projects/NewFestivalTown.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "Android",
+            "Arcade",
+            "Cozy"
+          ],
+          "en": [
+            "Unity",
+            "Android",
+            "Arcade",
+            "Cozy"
+          ]
+        },
+        "imageHover": "images/projects/NewFestivalTown-hover.png"
+      },
+      {
+        "year": 2026,
+        "title": {
+          "es": "Pawnie: Focus Pals",
+          "en": "Pawnie: Focus Pals"
+        },
+        "description": {
+          "es": "Pawnie: Focus Pals es un compañero de escritorio para la productividad. Pawnie vive sobre Windows y actúa como un reflejo del esfuerzo del usuario, promoviendo la concentración y el bienestar mediante un sistema de refuerzo positivo y la personalización del entorno",
+          "en": "Pawnie: Focus Pals is a desktop companion for productivity. Pawnie runs on Windows and acts as a reflection of the user's effort, promoting focus and well-being through a positive reinforcement system and environment customization."
+        },
+        "link": "https://store.steampowered.com/app/3035770/Pawnie_Focus_Pals/",
+        "image": "images/projects/PawnieFocusPals.png",
+        "tags": {
+          "es": [
+            "Unity",
+            "Steam",
+            "Productividad",
+            "Compañero de escritorio"
+          ],
+          "en": [
+            "Unity",
+            "Steam",
+            "Productivity",
+            "Desktop Companion"
+          ]
+        },
+        "imageHover": "images/projects/PawnieFocusPals-hover.png"
+      }
+    ],
+    "reconocimientos": [
+      {
+        "year": 2025,
+        "title": {
+          "es": "Beca Más Cultura Local Para La Localidad De Puente Aranda 2025",
+          "en": "Beca Más Cultura Local Para La Localidad De Puente Aranda 2025"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "VII Festival del desarme en Puente Aranda: Conexiones",
+          "en": "VII Festival del desarme en Puente Aranda: Conexiones"
+        }
+      }
+    ],
+    "contacto": [
+      {
+        "label": {
+          "es": "Correo",
+          "en": "Email"
+        },
+        "icon": "✉️",
+        "url": "carlos.sigfrit@gmail.com"
+      },
+      {
+        "label": {
+          "es": "Twitter / X",
+          "en": "Twitter / X"
+        },
+        "icon": "🐦",
+        "url": "https://x.com/Raideos"
+      },
+      {
+        "label": {
+          "es": "Instagram",
+          "en": "Instagram"
+        },
+        "icon": "📷",
+        "url": "https://www.instagram.com/raideos/"
+      }
+    ]
+  }
+}

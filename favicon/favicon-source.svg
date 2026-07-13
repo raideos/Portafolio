@@ -1,0 +1,22 @@
+<svg viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- fondo redondeado color marca -->
+  <rect x="0" y="0" width="512" height="512" rx="120" fill="#FF9F5B"/>
+
+  <!-- cuernos -->
+  <path d="M170 150 Q150 70 210 110 Q190 150 170 150 Z" fill="#FFD9A0"/>
+  <path d="M300 110 Q360 70 342 150 Q322 150 300 110 Z" fill="#FFD9A0"/>
+
+  <!-- cabeza -->
+  <circle cx="256" cy="270" r="150" fill="#FF9F5B"/>
+
+  <!-- hocico/mejilla clara -->
+  <ellipse cx="256" cy="320" rx="90" ry="75" fill="#FFF1E0"/>
+
+  <!-- ojos -->
+  <circle cx="205" cy="255" r="16" fill="#3D3B54"/>
+  <circle cx="307" cy="255" r="16" fill="#3D3B54"/>
+
+  <!-- mejillas sonrojadas -->
+  <circle cx="175" cy="300" r="20" fill="#FF6F59" opacity="0.55"/>
+  <circle cx="337" cy="300" r="20" fill="#FF6F59" opacity="0.55"/>
+</svg>
