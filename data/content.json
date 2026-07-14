@@ -543,16 +543,136 @@
       {
         "year": 2025,
         "title": {
-          "es": "Beca Más Cultura Local Para La Localidad De Puente Aranda 2025",
-          "en": "Beca Más Cultura Local Para La Localidad De Puente Aranda 2025"
+          "es": "Ganador de la Beca más cultura local para la localidad de Puente Aranda 2025",
+          "en": "Winner of the 'Beca más cultura local para la localidad de Puente Aranda 2025'"
         },
         "role": {
           "es": "Representante / Organizador",
           "en": "Representative / Organizer"
         },
         "description": {
-          "es": "VII Festival del desarme en Puente Aranda: Conexiones",
-          "en": "VII Festival del desarme en Puente Aranda: Conexiones"
+          "es": "VII Festival del desarme en Puente Aranda: Conexiones creativas.",
+          "en": "VII Disarmament Festival in Puente Aranda: Creative Connections."
+        }
+      },
+      {
+        "year": 2023,
+        "title": {
+          "es": "Ganador de la Beca es cultural local 2023",
+          "en": "Winner of the 'Beca es cultural local 2023'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "VI Festival del desarme. Propuestas desarrollada en alianza con la Organización HBG, bajo la Alianza Solaris-HBG",
+          "en": "VI Disarmament Festival. Proposals developed in partnership with the HBG Organization, under the Solaris-HBG Alliance"
+        }
+      },
+      {
+        "year": 2020,
+        "title": {
+          "es": "Ganador de la Beca territorios activos de la SCRD 2020",
+          "en": "Winner of the 'Beca Territorios Activos de la SCRD 2020'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "IV, V Festival del Desarme en Puente Aranda en sus versiones virtuales, año 2020 y 2021",
+          "en": "IV, V Disarmament Festival in Puente Aranda in its virtual versions, 2020 and 2021"
+        }
+      },
+      {
+        "year": 2019,
+        "title": {
+          "es": "Ganador de la Beca Murales para la convivencia",
+          "en": "Winner of the 'Beca Murales para la convivencia'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Localidad de Antonio Nariño. Realización de mural en gran formato sobre cultura ciudadana y cuidado del medio ambiente, realizado de manera participativa con la comunidad del barrio Restrepo y el Colegio Guillermo León Valencia, sede de primaria.",
+          "en": "Antonio Nariño district. Creation of a large-format mural on civic culture and environmental care, carried out in a participatory manner with the community of the Restrepo neighborhood and the Guillermo León Valencia School, primary campus."
+        }
+      },
+      {
+        "year": 2018,
+        "title": {
+          "es": "Ganador de la Beca Parques para todos 'Iniciativas culturales para la convivencia'",
+          "en": "Winner of the 'Beca Parques para todos 'Iniciativas culturales para la convivencia''"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "San Eusebio Territorio de cultura y convivencia",
+          "en": "San Eusebio Territory of culture and coexistence"
+        }
+      },
+      {
+        "year": 2016,
+        "title": {
+          "es": "III Festival del Desarme en Puente Aranda",
+          "en": "III Disarmament Festival in Puente Aranda"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Desarrollo del III Festival del Desarme en Puente Aranda en 2016 con apoyo del Corredor cultural de la localidad y la Fundación HBG. ",
+          "en": "Development of the III Disarmament Festival in Puente Aranda in 2016 with the support of the local cultural corridor and the HBG Foundation."
+        }
+      },
+      {
+        "year": 2016,
+        "title": {
+          "es": "Ganador de la Beca Volvamos al parque, del IDRD y la SCRD",
+          "en": "Winner of the 'Beca Volvamos al parque, del IDRD y la SCRD'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Desarrollo de la propuesta 'Milenta: Vida, juego y convivencia'",
+          "en": "Development of the proposal 'Milenta: Life, play and coexistence'"
+        }
+      },
+      {
+        "year": 2015,
+        "title": {
+          "es": "Ganador de la Beca ciudadanías juveniles locales, de la SCRD (2014 y 2015)",
+          "en": "Winner of the 'Beca ciudadanías juveniles locales, de la SCRD (2014 y 2015)'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Desarrollo de la propuesta 'Transformando el lado Oscuro de Bakatá'",
+          "en": "Development of the proposal 'Transforming the Dark Side of Bakatá'"
+        }
+      },
+      {
+        "year": 2013,
+        "title": {
+          "es": "Ganador de la Beca cabildos juveniles de la OFB",
+          "en": "Winner of the 'Beca cabildos juveniles de la OFB'"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Propuesta II Festival del desarme en Puente Aranda. Programa distrital de estímulos.",
+          "en": "Proposal for the Second Disarmament Festival in Puente Aranda. District incentive program."
         }
       }
     ],
