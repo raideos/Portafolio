@@ -49,7 +49,7 @@
   },
   "data": {
     "sobreMi": {
-      "foto": "images/profile/foto.jpg",
+      "foto": "images/profile/foto.webp",
       "historia": {
         "nombre": {
           "es": "Carlos Becerra",
@@ -80,7 +80,7 @@
             "es": "Su cultura, idioma y estética me fascinan",
             "en": "Its culture, language, and aesthetics fascinate me"
           },
-          "image": "images/interests/japon.jpg"
+          "image": "images/interests/japon.webp"
         },
         {
           "name": {
@@ -91,7 +91,7 @@
             "es": "Amante de los perros y los animales en general",
             "en": "A dog lover, and animals in general"
           },
-          "image": "images/interests/toky.jpg"
+          "image": "images/interests/toky.webp"
         },
         {
           "name": {
@@ -102,7 +102,7 @@
             "es": "Disfruto experimentar con nuevas recetas",
             "en": "I enjoy experimenting with new recipes"
           },
-          "image": "images/interests/cocina.jpg"
+          "image": "images/interests/cocina.webp"
         },
         {
           "name": {
@@ -124,7 +124,7 @@
             "es": "Me encanta crear figuras con papel",
             "en": "I love creating figures with paper"
           },
-          "image": "images/interests/origami.jpg"
+          "image": "images/interests/origami.webp"
         },
         {
           "name": {
@@ -135,7 +135,7 @@
             "es": "Disfruto descubrir nuevos lugares y culturas",
             "en": "I enjoy discovering new places and cultures"
           },
-          "image": "images/interests/viajes.jpg"
+          "image": "images/interests/viajes.webp"
         }
       ],
       "videojuegosFavoritos": [
@@ -151,35 +151,35 @@
             "es": "Clair Obscur: Expedition 33",
             "en": "Clair Obscur: Expedition 33"
           },
-          "image": "images/games/clair-obscur-expedition-33.jpg"
+          "image": "images/games/clair-obscur-expedition-33.webp"
         },
         {
           "name": {
             "es": "Steins;Gate",
             "en": "Steins;Gate"
           },
-          "image": "images/games/steins-gate.jpg"
+          "image": "images/games/steins-gate.webp"
         },
         {
           "name": {
             "es": "Genshin Impact",
             "en": "Genshin Impact"
           },
-          "image": "images/games/genshin-impact.jpg"
+          "image": "images/games/genshin-impact.webp"
         },
         {
           "name": {
             "es": "Baldur's Gate 3",
             "en": "Baldur's Gate 3"
           },
-          "image": "images/games/baldurs-gate-3.jpg"
+          "image": "images/games/baldurs-gate-3.webp"
         },
         {
           "name": {
             "es": "Pokémon HeartGold/SoulSilver",
             "en": "Pokémon HeartGold/SoulSilver"
           },
-          "image": "images/games/PokemonHG.jpg"
+          "image": "images/games/PokemonHG.webp"
         }
       ],
       "musica": [
@@ -239,7 +239,7 @@
           "en": "Bakatá is invaded by imaginaries that generate communication problems and violence among its inhabitants, but the youngest, the children, can see them, fight them and must fight to reconcile the territories, overcome stigmatization, greed, misinformation, prejudices, hatred and transform the dark side of Bakatá."
         },
         "link": "https://solarisgames.wixsite.com/bakata/lado-oscuro",
-        "image": "images/projects/Bakata.jpg",
+        "image": "images/projects/Bakata.webp",
         "tags": {
           "es": [
             "RPG Maker",
@@ -252,7 +252,7 @@
             "RPG"
           ]
         },
-        "imageHover": "images/projects/Bakata-hover.png"
+        "imageHover": "images/projects/Bakata-hover.webp"
       },
       {
         "year": 2017,
@@ -265,7 +265,7 @@
           "en": "You are a seasoned exorcist traversing Hell, seeking to expel, banish, and destroy evil spirits.\nPlay this puzzle game that uses mobile phone lock mechanics."
         },
         "link": "https://www.youtube.com/watch?v=3r41l1CJpt8",
-        "image": "images/projects/Exorcist.jpg",
+        "image": "images/projects/Exorcist.webp",
         "tags": {
           "es": [
             "Unity",
@@ -280,7 +280,7 @@
             "Puzzle"
           ]
         },
-        "imageHover": "images/projects/Exorcist-hover.png"
+        "imageHover": "images/projects/Exorcist-hover.webp"
       },
       {
         "year": 2018,
@@ -292,8 +292,8 @@
           "es": "En Holy sheep, los jugadores encarnan a perros pastores en un mundo postapocalíptico sin humanos; los perros reúnen ovejas para ofrendar a sus dueños desaparecidos, a cambio de lo cual reciben comida. Sin embargo lo que en realidad sucede es que sin saberlo trabajan para una raza alienígena que raptó a los humanos y ahora a las ovejas para ofrendar a sus dioses. Todo sucede ambientado en la década de los 90s en un mundo donde la naturaleza está reclamando de nuevo los lugares que había transformado el hombre.",
           "en": "In Holy Sheep, players take on the role of sheepdogs in a post-apocalyptic world devoid of humans. The dogs gather sheep to offer to their missing owners, receiving food in return. However, they are unknowingly working for an alien race that abducted humans and now takes the sheep as offerings to their gods. The game is set in the 1990s, in a world where nature is reclaiming the lands transformed by humankind."
         },
-        "link": "https://www.youtube.com/watch?v=jhiUeModGYc",
-        "image": "images/projects/HolySheep.png",
+        "link": "https://asharastudios.itch.io/holysheep",
+        "image": "images/projects/HolySheep.webp",
         "tags": {
           "es": [
             "Unity",
@@ -308,7 +308,7 @@
             "Turn based strategy game"
           ]
         },
-        "imageHover": "images/projects/HolySheep-hover.png"
+        "imageHover": "images/projects/HolySheep-hover.webp"
       },
       {
         "year": 2019,
@@ -321,7 +321,7 @@
           "en": "You are Mowa, a mantis shrimp that takes over the adventure of looking for its lost family. Mowa's family disappeared after a global cataclysm changed the Earth surface with drowning seas. The ocean is now an unstable dark place more dangerous than ever before."
         },
         "link": "https://asharastudios.itch.io/un-oceano-brillante",
-        "image": "images/projects/TBO.png",
+        "image": "images/projects/TBO.webp",
         "tags": {
           "es": [
             "Unity",
@@ -338,7 +338,7 @@
             "Puzzle"
           ]
         },
-        "imageHover": "images/projects/TBO-hover.png"
+        "imageHover": "images/projects/TBO-hover.webp"
       },
       {
         "year": 2020,
@@ -351,7 +351,7 @@
           "en": "Sinful Catalyst is a dark fantasy visual novel with a puzzle/action battle system. Follow Gyulia's journey on the Second Circle, battle nasty butlers, and fall at the hands of the first Mistress, Lilith."
         },
         "link": "https://store.steampowered.com/app/1628260/Sinful_Catalyst_CH1_Ethereal_Camellia/",
-        "image": "images/projects/Sinful.png",
+        "image": "images/projects/Sinful.webp",
         "tags": {
           "es": [
             "Unity",
@@ -368,7 +368,7 @@
             "Puzzle"
           ]
         },
-        "imageHover": "images/projects/Sinful-hover.png"
+        "imageHover": "images/projects/Sinful-hover.webp"
       },
       {
         "year": 2021,
@@ -381,7 +381,7 @@
           "en": "You won SAI-G’s raffle for beta testing EMBLA: the most advanced AI unit of the famous technology company.\nThe only condition is that you train its cognitive modules, which will slowly develop the EMBLA unit’s perception of humanity.\nBecome one of the first fortunate to interact with the ultimate being."
         },
         "link": "https://embla.kimochi.games",
-        "image": "images/projects/EMBLA.png",
+        "image": "images/projects/EMBLA.webp",
         "tags": {
           "es": [
             "Unity",
@@ -398,7 +398,7 @@
             "Puzzle"
           ]
         },
-        "imageHover": "images/projects/EMBLA-hover.png"
+        "imageHover": "images/projects/EMBLA-hover.webp"
       },
       {
         "year": 2022,
@@ -411,7 +411,7 @@
           "en": "Play, decide and change the destiny of Zorrito Comunica and the secret of the Wetland"
         },
         "link": "https://www.youtube.com/watch?v=jr3gla6l4xg",
-        "image": "images/projects/Zorrito.jpg",
+        "image": "images/projects/Zorrito.webp",
         "tags": {
           "es": [
             "Unity",
@@ -426,7 +426,7 @@
             "Multiple endings"
           ]
         },
-        "imageHover": "images/projects/Zorrito-hover.png"
+        "imageHover": "images/projects/Zorrito-hover.webp"
       },
       {
         "year": 2023,
@@ -439,20 +439,20 @@
           "en": "Explore dungeons alongside your creatures called Arkane. Defeat enemies in these auto-generated labyrinths and accumulate the most points."
         },
         "link": "",
-        "image": "images/projects/ArcaneBestiary.png",
+        "image": "images/projects/ArcaneBestiary.webp",
         "tags": {
           "es": [
             "Unity",
             "PC",
             "Dungeon Crawler"
           ],
-          "en": [            
+          "en": [
             "Unity",
             "PC",
             "Dungeon Crawler"
           ]
         },
-        "imageHover": "images/projects/ArcaneBestiary-hover.png"
+        "imageHover": "images/projects/ArcaneBestiary-hover.webp"
       },
       {
         "year": 2023,
@@ -465,7 +465,7 @@
           "en": "A deck-building game with real-time combat, where you play as an exorcist tasked with sealing away terrifying creatures. Explore procedurally generated maps of Colombian tourist destinations while crafting a deck of cards to defeat your enemies by following on-screen patterns."
         },
         "link": "https://kimochivg.itch.io/sombrasancestrales",
-        "image": "images/projects/SombrasAncestrales.png",
+        "image": "images/projects/SombrasAncestrales.webp",
         "tags": {
           "es": [
             "Unity",
@@ -480,7 +480,7 @@
             "Deck-building"
           ]
         },
-        "imageHover": "images/projects/SombrasAncestrales-hover.png"
+        "imageHover": "images/projects/SombrasAncestrales-hover.webp"
       },
       {
         "year": 2025,
@@ -493,7 +493,7 @@
           "en": "Welcome to New Festival Town, a social arcade inspired by retro games where every player can stand out, compete, and connect. In this console-style experience, you care for unique characters called Towners. Each Towner is your personal avatar, giving you access to daily rewards, customization, and action-packed arcade challenges. Whether you like collecting, decorating, or climbing the rankings, Festival Town provides the tools for you to play your way."
         },
         "link": "https://play.google.com/store/apps/details?id=com.AsharaStudios.NewFestivalTown&hl=es",
-        "image": "images/projects/NewFestivalTown.png",
+        "image": "images/projects/NewFestivalTown.webp",
         "tags": {
           "es": [
             "Unity",
@@ -508,7 +508,7 @@
             "Cozy"
           ]
         },
-        "imageHover": "images/projects/NewFestivalTown-hover.png"
+        "imageHover": "images/projects/NewFestivalTown-hover.webp"
       },
       {
         "year": 2026,
@@ -521,7 +521,7 @@
           "en": "Pawnie: Focus Pals is a desktop companion for productivity. Pawnie runs on Windows and acts as a reflection of the user's effort, promoting focus and well-being through a positive reinforcement system and environment customization."
         },
         "link": "https://store.steampowered.com/app/3035770/Pawnie_Focus_Pals/",
-        "image": "images/projects/PawnieFocusPals.png",
+        "image": "images/projects/PawnieFocusPals.webp",
         "tags": {
           "es": [
             "Unity",
@@ -536,10 +536,57 @@
             "Desktop Companion"
           ]
         },
-        "imageHover": "images/projects/PawnieFocusPals-hover.png"
+        "imageHover": "images/projects/PawnieFocusPals-hover.webp"
+      },
+      {
+        "year": 2026,
+        "title": {
+          "es": "Chagrarol",
+          "en": "Chagrarol"
+        },
+        "description": {
+          "es": "Chagra Rol es un juego de gestión de tiempo y recursos en el que tendrás que mantener viva la economía circular de tu ciudad. Te acompañan diez huerteros inspirados en líderes reales de huertas urbanas de Bogotá.",
+          "en": "Chagra Rol is a time and resource management game where you must keep your city's circular economy alive. Along the way, you'll be joined by ten urban gardeners inspired by real community garden leaders from Bogotá."
+        },
+        "link": "https://solarisgames1.itch.io/chagrarol",
+        "image": "images/projects/Chagrarol.webp",
+        "tags": {
+          "es": [
+            "Unity",
+            "Drag and drop",
+            "Educativo",
+            "Gestión de recursos",
+            "Construcción de ciudades",
+            "Economía circular"
+          ],
+          "en": [
+            "Unity",
+            "Drag and drop",
+            "Educational",
+            "Resource management",
+            "City-building",
+            "Circular economy"
+          ]
+        },
+        "imageHover": "images/projects/Chagrarol-hover.webp"
       }
     ],
     "reconocimientos": [
+      {
+        "year": 2026,
+        "title": {
+          "es": "Ganador de la Beca Estrategias Novedosas de la Secretaría de Cultura, Recreación y Deporte",
+          "en": "Winner of the Estrategias Novedosas Grant from Bogotá's Secretariat of Culture, Recreation and Sports"
+        },
+        "role": {
+          "es": "Representante / Organizador",
+          "en": "Representative / Organizer"
+        },
+        "description": {
+          "es": "Eco-Sistemas en Red: Experiencia Gamificada de Soberanía Alimentaria y Economía Circular en Bogotá",
+          "en": "Eco-Sistemas en Red: A Gamified Experience on Food Sovereignty and Circular Economy in Bogotá"
+        }
+      },
       {
         "year": 2025,
         "title": {
@@ -683,7 +730,7 @@
           "en": "Email"
         },
         "icon": "✉️",
-        "url": "carlos.sigfrit@gmail.com"
+        "url": "mailto:carlos.sigfrit@gmail.com"
       },
       {
         "label": {
@@ -700,6 +747,14 @@
         },
         "icon": "📷",
         "url": "https://www.instagram.com/raideos/"
+      },
+      {
+        "label": {
+          "es": "LinkedIn",
+          "en": "LinkedIn"
+        },
+        "icon": "💼",
+        "url": "https://www.linkedin.com/in/raideos/"
       }
     ]
   }
