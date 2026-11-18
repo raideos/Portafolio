@@ -281,7 +281,7 @@ Object.assign(sun.shadow.camera, { left: -30, right: 30, top: 30, bottom: -30, n
 sun.shadow.bias = -0.0006; sun.shadow.normalBias = 0.02;
 const SUN_OFF = new THREE.Vector3(6, 30, 22);
 // De noche, el personaje lleva un farol
-const lantern = new THREE.PointLight(0xFFB062, 0, 18, 1.1);
+const lantern = new THREE.PointLight(0xFFB062, 0, 14, 1.5);
 scene.add(hemi, sun, sun.target, lantern);
 
 const LIGHTS = {
@@ -553,11 +553,21 @@ overlay.addEventListener('click', e => { if (e.target === overlay) closePanel();
 
 const L = o => o[lang] ?? o.es;
 const linkAttrs = url => url.startsWith('mailto:') ? '' : ' target="_blank" rel="noopener"';
+// Texto corto bajo cada red: el correo, o "@usuario" sacado del link
+function contactHandle(url){
+  if (url.startsWith('mailto:')) return url.slice(7);
+  try {
+    const u = new URL(url), parts = u.pathname.split('/').filter(Boolean);
+    const user = parts[parts.length - 1];
+    return user ? '@' + user : u.hostname.replace(/^www\./, '');
+  } catch(e){ return url; }
+}
 
 const PANELS = {
   historia(){ const h = DATA.sobreMi.historia, foto = DATA.sobreMi.foto;
-    return `<h2>${UI[lang].miHistoria}</h2>${foto ? `<img class="profile-photo" src="${foto}" alt="foto">` : ''}
-      <div class="profile-name">${L(h.nombre)}</div><ul class="bullet-list">${h.bullets.map(b => `<li>${L(b)}</li>`).join('')}</ul>`; },
+    return `<h2>${UI[lang].miHistoria}</h2><div class="historia">
+      ${foto ? `<img class="historia-photo" src="${foto}" alt="${L(h.nombre)}">` : ''}
+      <div><div class="profile-name">${L(h.nombre)}</div><ul class="bullet-list">${h.bullets.map(b => `<li>${L(b)}</li>`).join('')}</ul></div></div>`; },
   gustos(){ return `<h2>${UI[lang].misGustos}</h2><div class="game-grid">${DATA.sobreMi.gustos.map(g => `
       <div class="game-card">${g.image ? `<img src="${g.image}" alt="${L(g.name)}" loading="lazy">` : ''}
       <div class="game-name">${L(g.name)}</div><div class="game-desc">${L(g.description)}</div></div>`).join('')}</div>`; },
@@ -571,7 +581,7 @@ const PANELS = {
     }).join(''); },
   proyecto(p, inList = false){
     const title = inList ? `<h3 class="entry-title">${L(p.title)}</h3>` : `<h2>${L(p.title)}</h2>`;
-    return `<div class="entry proj-detail">
+    return `<div class="entry proj-detail${inList ? '' : ' single'}">
       ${p.image ? `<div class="project-thumb-wrap"><img class="project-thumb img-base" src="${p.image}" alt="${L(p.title)}" loading="lazy">
       ${p.imageHover ? `<img class="project-thumb img-hover" src="${p.imageHover}" alt="${L(p.title)}" loading="lazy">` : ''}</div>` : ''}
       <div class="project-text"><span class="entry-year">${p.year}</span>${(p.tags[lang] || []).map(t => `<span class="tag">${t}</span>`).join('')}
@@ -580,9 +590,14 @@ const PANELS = {
   reconocimientos(){ return `<h2>${UI[lang].reconocimientosTitle}</h2>` + [...DATA.reconocimientos].sort((a, b) => b.year - a.year).map(r => `
       <div class="entry"><span class="entry-year">${r.year}</span><span class="tag">${L(r.role)}</span>
       <div class="entry-title">${L(r.title)}</div><div class="entry-desc">${L(r.description)}</div></div>`).join(''); },
-  contacto(){ return `<h2>${UI[lang].contactoTitle}</h2>` + DATA.contacto.map(c => `
-      <div class="entry"><div class="entry-title">${c.icon} ${L(c.label)}</div>
-      <a class="entry-link" href="${c.url}"${linkAttrs(c.url)}>${UI[lang].abrir}</a></div>`).join(''); }
+  // una tarjeta por red, en grilla 2x2; toda la tarjeta es el link
+  contacto(){ return `<h2>${UI[lang].contactoTitle}</h2><div class="contact-grid">` + DATA.contacto.map(c => `
+      <a class="contact-card" href="${c.url}"${linkAttrs(c.url)}>
+        <span class="contact-icon">${c.icon}</span>
+        <span class="contact-label">${L(c.label)}</span>
+        <span class="contact-handle">${contactHandle(c.url)}</span>
+        <span class="contact-cta">${UI[lang].abrir}</span>
+      </a>`).join('') + `</div>`; }
 };
 
 /* "Ver todo en lista": todo el portafolio en un solo panel, sin caminar */
@@ -731,7 +746,7 @@ function update(dt){
   hemi.intensity = lerp(LIGHTS.day.hemi, LIGHTS.night.hemi, night);
   sun.color.lerpColors(LIGHTS.day.sun, LIGHTS.night.sun, night);
   sun.intensity = lerp(LIGHTS.day.sunI, LIGHTS.night.sunI, night);
-  lantern.intensity = night * 55;
+  lantern.intensity = night * 16;   // suave: si es muy fuerte, las tarjetas cercanas se queman
   if (pageMat) pageMat.color.lerpColors(PAGE_DAY, PAGE_NIGHT, night);
 
   // --- movimiento ---
@@ -800,7 +815,7 @@ function update(dt){
     // acostado = ilustración "impresa" (más pálida); de pie = cobra vida y gana luz
     const base = p.info ? lerp(1, 0.8, night) : dim;
     p.mesh.material.color.setRGB((0.82 + 0.18*k) * base, (0.80 + 0.2*k) * base, (0.74 + 0.26*k) * base);
-    p.mesh.material.emissiveIntensity = p.info ? k * lerp(0.32, 0.5, night) : k * lerp(0.16, 0.04, night);
+    p.mesh.material.emissiveIntensity = p.info ? k * lerp(0.32, 0.2, night) : k * lerp(0.16, 0.04, night);
     p.pivot.scale.setScalar(0.88 + 0.12*k);
     // viento: los que están de pie se mecen suavemente aunque el personaje esté quieto
     if (p.sway) p.mesh.rotation.z = Math.sin(time * 1.5 + p.swaySeed + p.x * 0.15) * p.sway * gust * k;
@@ -816,7 +831,7 @@ function update(dt){
     const on = h === activeHotspot;
     h.ring.material.opacity = lerp(h.ring.material.opacity, on ? 0.95 : h.popup.t > 0.5 ? 0.45 : 0, 1 - Math.exp(-dt * 8));
     h.ring.scale.setScalar(on ? 1 + Math.sin(time * 5) * 0.08 : 1);
-    if (on) h.mesh.material.emissiveIntensity += 0.12;   // la parada activa resalta
+    if (on) h.mesh.material.emissiveIntensity += lerp(0.12, 0.04, night);   // la parada activa resalta
   });
   if (activeHotspot && !overlayOpen()){
     tmpV.set(activeHotspot.x, activeHotspot.top + 0.3, activeHotspot.z).project(camera);

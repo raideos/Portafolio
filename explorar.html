@@ -68,9 +68,10 @@
     width:100%; max-width:min(940px, 100%); max-height:90vh;
     padding:30px 44px 40px; border-radius:26px; background:var(--card); color:var(--ink);
   }
+  /* X en la esquina superior derecha, sobre el relleno del panel: no empuja ni tapa el contenido */
   #panel .closeBtn{
-    position:sticky; top:0; float:right; z-index:2;
-    width:44px; height:44px; font-size:20px; margin:-6px -20px 8px 12px;
+    position:sticky; top:0; display:block; z-index:3;
+    width:44px; height:44px; font-size:20px; margin:-16px -30px -28px auto;
     background:var(--bg); color:var(--ink); box-shadow:var(--shadow);
   }
   #panel h2{ font-size:32px; margin:6px 0 20px; color:var(--ink); }
@@ -85,15 +86,42 @@
   #panel .profile-photo{ width:150px; height:150px; }
   #panel .profile-name{ font-size:26px; }
   #panel .music-disclaimer{ font-size:17px; color:var(--ink-soft); white-space:pre-line; }
-  #panel .game-grid{ grid-template-columns:repeat(auto-fill,minmax(180px,1fr)); gap:20px; }
+  /* 3 columnas fijas: 6 elementos quedan en 3 + 3 */
+  #panel .game-grid{ grid-template-columns:repeat(3,1fr); gap:22px; }
   #panel .game-card img{ background:var(--bg); }
   #panel .game-name{ font-size:17px; }
   #panel .game-desc{ font-size:15px; color:var(--ink-soft); }
   #panel .spotify-embed{ height:152px; }
 
-  .proj-detail{ display:grid; grid-template-columns:1.25fr 1fr; gap:30px; align-items:start; }
-  .proj-detail .project-thumb-wrap{ border-radius:18px; }
+  /* Proyecto: imagen más ancha y centrada verticalmente junto al texto */
+  .proj-detail{ display:grid; grid-template-columns:1.4fr 1fr; gap:32px; align-items:center; }
+  .proj-detail.single{ margin-top:46px; margin-bottom:0; padding-bottom:0; border-bottom:none; }
+  .proj-detail .project-thumb-wrap{ border-radius:18px; box-shadow:var(--shadow); }
   .proj-detail h2{ margin:10px 0 10px !important; }
+
+  /* Mi historia: foto grande a la izquierda, texto a la derecha */
+  .historia{ display:grid; grid-template-columns:240px 1fr; gap:36px; align-items:center; }
+  .historia-photo{ width:240px; height:240px; border-radius:50%; object-fit:cover; box-shadow:var(--shadow); border:6px solid var(--bg); }
+  .historia .profile-name{ margin-bottom:14px; }
+
+  /* Contacto: 4 tarjetas en 2x2 */
+  .contact-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:18px; }
+  .contact-card{
+    display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px;
+    background:var(--bg); color:var(--ink); text-decoration:none;
+    border-radius:22px; padding:26px 18px 22px; transition:transform .18s ease, box-shadow .18s ease;
+  }
+  .contact-card:hover{ transform:translateY(-3px); box-shadow:var(--shadow); }
+  .contact-icon{
+    width:72px; height:72px; border-radius:50%; background:var(--accent-soft);
+    display:flex; align-items:center; justify-content:center; font-size:36px; margin-bottom:6px;
+  }
+  .contact-label{ font-family:'Quicksand',sans-serif; font-weight:700; font-size:22px; }
+  .contact-handle{ font-size:15px; color:var(--ink-soft); overflow-wrap:anywhere; }
+  .contact-cta{
+    margin-top:10px; font-family:'Quicksand',sans-serif; font-weight:600; font-size:15px;
+    background:var(--accent); color:var(--accent-ink); padding:8px 18px; border-radius:14px;
+  }
 
   /* Vista en lista */
   #panel.wide{ max-width:min(1100px, 100%); }
@@ -118,12 +146,22 @@
 
   @media (max-width:760px){
     .proj-detail{ grid-template-columns:1fr; gap:16px; }
+    .historia{ grid-template-columns:1fr; gap:18px; justify-items:center; }
+    .historia-photo{ width:190px; height:190px; }
+    .historia > div{ width:100%; }
+    .historia .profile-name{ text-align:center; }
   }
   /* Celular: el panel ocupa toda la pantalla */
   @media (max-width:640px){
     #overlay{ padding:0; align-items:stretch; }
     #panel{ max-width:100%; max-height:none; height:100dvh; border-radius:0; padding:16px 18px 32px; }
-    #panel .closeBtn{ margin:0 -4px 6px 10px; }
+    #panel .closeBtn{ margin:-6px -6px -38px auto; }
+    .proj-detail.single{ margin-top:48px; }
+    .contact-grid{ gap:12px; }
+    .contact-card{ padding:20px 10px 18px; }
+    .contact-icon{ width:58px; height:58px; font-size:30px; }
+    .contact-label{ font-size:18px; }
+    .contact-handle{ font-size:13px; }
     #panel h2{ font-size:26px; }
     #panel .entry-desc{ font-size:17px; }
     #panel .game-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
